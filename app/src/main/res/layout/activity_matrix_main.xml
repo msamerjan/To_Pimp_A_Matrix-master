@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mobiledev.topimpamatrix.MatrixMainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/activity_main_button_layout"
+        android:orientation="vertical"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:paddingTop="8dp">
+
+        <ImageView
+            android:id="@+id/activity_main_camera_image"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/activity_main_imageView_description"
+            android:paddingBottom="4dp"
+            tools:background="@android:color/holo_blue_light" />
+
+        <TextView
+            android:id="@+id/activity_main_digital_matrix"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="4dp"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            tools:background="@android:color/holo_red_light"
+            tools:text="[INSERT MATRIX HERE]" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_main_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/activity_main_rowReduce_button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray"
+            android:paddingEnd="4dp"
+            android:text="@string/activity_main_rowReduce_button"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            tools:ignore="RtlSymmetry" />
+
+        <Button
+            android:id="@+id/activity_main_camera_button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray"
+            android:paddingEnd="4dp"
+            android:paddingStart="4dp"
+            android:text="@string/activity_main_camera_button"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/activity_main_solve_button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray"
+            android:paddingStart="4dp"
+            android:text="@string/activity_main_solve_button"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            tools:ignore="RtlSymmetry" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

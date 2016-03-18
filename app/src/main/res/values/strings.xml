@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">To Pimp A Matrix</string>
+    <string name="activity_main_camera_button">Camera</string>
+    <string name="activity_main_solve_button">Solve</string>
+    <string name="activity_main_rowReduce_button">Row Reduce</string>
+    <string name="activity_main_imageView_description">This is where the image of the matrix will end up</string>
+</resources>
